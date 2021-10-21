@@ -1,0 +1,10 @@
+{% for product in product %}
+
+Nom : <a href="{{path('article2', {'id': product.id})}}">{{product.nom}}</a>
+<br>
+Prix : {{product.prix}} €
+<br>
+<br>
+
+{% endfor %}
+<a href="{{path('producth')}}">Accueil</a>
