@@ -12,7 +12,7 @@ use App\Form\ProductType;
 class ProductController extends AbstractController
 {
     /**
-     * @Route("/product", name="product")
+     * @Route("/AjoutEquipement", name="product")
      */
     public function index(Request $request): Response
     {
@@ -31,7 +31,7 @@ class ProductController extends AbstractController
     }
 
  /**
-     * @Route("/producthome", name="producth")
+     * @Route("/HomeStock", name="producth")
      */
     public function accueil(): Response
     {
@@ -41,7 +41,7 @@ class ProductController extends AbstractController
     }
 
     /**
-     * @Route("/producta", name="article")
+     * @Route("/Equipements", name="article")
      */
     public function showProduct(){
 
@@ -57,7 +57,7 @@ class ProductController extends AbstractController
           ]);
     }
     /**
-     * @Route("/productDescription/{id}", name="article2")
+     * @Route("/InfosEquipements/{id}", name="article2")
      */
     public function showProductDescription($id){
 
