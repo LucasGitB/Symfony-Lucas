@@ -3,28 +3,43 @@
 {% block title %}Ajouter un produit{% endblock %}
 
 {% block body %}
-<center>
-<section class="disposition">
+<header>
+<a class="accueil" href="{{path('producth')}}">
+<h1>
+FootStock.fr
+</h1></a>
+</header>
 
-<div class="card" style="width: 18rem;">
-  <img src="https://static.cdnlogo.com/logos/s/35/stock.svg" class="card-img-top" alt="...">
-  <div class="card-body">
-  <h5 class="card-title"><a href="{{path('article')}}">Produit</a></h5>
-    
-  </div>
-</div>
+<section class="container place">
 
-<br>
 
-<div class="card" style="width: 18rem;">
-  <img src="https://www.kevinbouilleaux.com/wp-content/uploads/2018/11/vente-produit.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"><a href="{{path('product')}}">Inscription Produit</a></h5>
+<a class="choix" href="{{path('article')}}">
+    <div>
+        <h5 class="card-title title">
+        
+        Equipement Stock
 
-   
-  </div>
-</div>
+        </h5>
+        <center>
+        <img src="https://www.mes-pieces-origine.fr/modules/blockreassurance/views/img/img_perso/stock-icon-png-14.png" alt="">
+         </center>
+    </div>
+</a>
 
+<a class="choix" href="{{path('product')}}">
+    <div>
+        <h5 class="card-title title">
+        
+        
+        Ajouter Equipement
+        
+        
+        </h5>
+        <center>
+        <img  src="https://static.thenounproject.com/png/2516319-200.png" alt="">
+ </center>
+    </div>
+</a>
 </section>
-</center>
 {% endblock %}
+
