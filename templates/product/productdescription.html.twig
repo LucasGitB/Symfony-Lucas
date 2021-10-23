@@ -1,9 +1,32 @@
+{% extends 'base.html.twig' %}
 
-Produit : {{product.description}} 
-<br>
+{% block title %}Ajouter un produit{% endblock %}
+
+{% block body %}
+<header>
+<a class="accueil" href="{{path('producth')}}">
+<h1>
+FootStock.fr
+</h1></a>
+</header>
+<h4>
+<div class="container choix2">
+{{product.nom}} 
+<br><br>
+
+Description : <br><br>
+{{product.description}} 
+<br><br>
 Prix : {{product.prix}} €
-<br>
+<br><br>
 Marque : {{product.marque}}
-<br>
-<a href="{{path('article')}}">Retour</a>
+<br><br>
+Quantité : {{product.quantite}}
+<br><br>
 
+
+</div>
+</h4>
+<br>
+<br>
+{% endblock %}

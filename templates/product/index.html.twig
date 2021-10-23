@@ -4,8 +4,12 @@
 
 {% block body %}
 
+<body class="index">
 
-<h1 class="colorh1"><a class="accueil" href="{{path('producth')}}">FootStock.fr</a></h1>
+<a class="accueil" href="{{path('producth')}}">
+<h1>
+FootStock.fr
+</h1></a>
 
 <section>
 
@@ -54,9 +58,9 @@
 <div class="form-group"><h5>{{form_row(form.prix, {'attr':{'class':'form-control'}}) }}</h5></div> <br>
 
 
-<button type="submit button" class="btn btn-primary">Ajouter</button>
+<button type="submit button" class="btn btn-light">Ajouter</button>
 {{form_end(form)}}
 </div>
 </section>
-
+</body>
 {% endblock %}
