@@ -11,14 +11,21 @@ FootStock.fr
 </h1></a>
 </header>
 
+
+
+
+//affichage du nom des Equipements et de la Quantité
+
+
+
+
 {% for product in product %}
+
 <a href="{{path('informations', {'id': product.id})}}">
 <div class="container choix2">
 <h4>{{product.nom}}</h4>
 <br>
 <h4>Quantité : {{product.quantite}} </h4>
-
-
 
 </div>
 </a>
