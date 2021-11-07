@@ -11,6 +11,8 @@ use App\Form\ProductType;
 
 class ProductController extends AbstractController
 {
+
+    //Formulaire pour rentrer un equipement en base de donnée
     /**
      * @Route("/AjoutEquipement", name="product")
      */
@@ -30,6 +32,8 @@ class ProductController extends AbstractController
         ]);
     }
 
+
+    //Accueil du site 
  /**
      * @Route("/HomeStock", name="producth")
      */
@@ -40,6 +44,8 @@ class ProductController extends AbstractController
         return $this->render('product/accueil.html.twig');
     }
 
+
+    //Affichage de tous les equipements
     /**
      * @Route("/Equipements", name="article")
      */
@@ -56,8 +62,11 @@ class ProductController extends AbstractController
             'product' => $product
           ]);
     }
+
+
+    //Affichage des informations en fonction de l'article selectionné 
     /**
-     * @Route("/InfosEquipements/{id}", name="article2")
+     * @Route("/InfosEquipements/{id}", name="informations")
      */
     public function showProductDescription($id){
 
@@ -72,6 +81,6 @@ class ProductController extends AbstractController
             'product' => $product
           ]);
 
-        //return new Response($product->getName());
+        
     }
 }
