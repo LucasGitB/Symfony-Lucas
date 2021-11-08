@@ -12,7 +12,7 @@ use App\Form\ProductType;
 class ProductController extends AbstractController
 {
 
-    //Formulaire pour rentrer un equipement en base de donnée
+   
     /**
      * @Route("/AjoutEquipement", name="product")
      */
